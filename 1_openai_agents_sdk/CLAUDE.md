@@ -21,7 +21,16 @@ let the student write the code.
 
 ## Reminders for this module
 - `model="gpt-5.4-mini"` on every agent.
+- Structured output uses **Pydantic**: `from pydantic import BaseModel, Field` (it ships with the SDK —
+  no separate install needed).
 - Scripts, not notebooks: put async code in `async def main()` and call `asyncio.run(main())`. No
   top-level `await`.
 - Load the key from `.env` with `load_dotenv()` before creating an agent.
-- The student works in `starter/main.py`. Don't paste a finished solution — build it with them.
+- The student works in `starter/main.py`. Don't paste a finished solution — build it with them, and keep
+  the file clean as you go (replace each TODO with its real code; see rule 8 in the root `CLAUDE.md`).
+
+## Part 1 is done when
+1. the script runs with no errors;
+2. `lookup_order` provably fires on a known order id (the summary reflects the looked-up order data);
+3. `result.final_output` is a populated `SupportTicket` with every field set.
+Confirm all three before telling the student Part 1 is complete — don't stop at "it printed something."
