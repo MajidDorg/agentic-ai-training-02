@@ -1,0 +1,9 @@
+# OpenAI Agents SDK (imported as `agents`). Pulls in openai>=2.26 automatically.
+# Pinned to the version this course was built and tested against.
+openai-agents==0.17.7
+
+# Data models for structured outputs
+pydantic>=2
+
+# Loads the OpenAI API key from the local .env file
+python-dotenv
