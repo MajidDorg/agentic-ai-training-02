@@ -43,10 +43,11 @@ pip install -r requirements.txt
 With the venv activated and your `.env` in place:
 
 ```bash
-python 1_openai_agents_sdk/starter/smoke_test.py
+python 1_openai_agents_sdk/smoke_test.py
 ```
 
-If it prints a short reply from the model, you're ready.
+If it prints a short reply from the model, you're ready. Full step-by-step setup (Windows + Mac) is in
+[`SETUP.md`](SETUP.md).
 
 ## How to use Claude Code in this course
 

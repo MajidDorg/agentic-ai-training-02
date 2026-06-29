@@ -1,6 +1,6 @@
-"""Setup check — run this once after setup to confirm your environment and API key work.
+"""Setup check - run this once after setup to confirm your environment and API key work.
 
-    python 1_openai_agents_sdk/starter/smoke_test.py
+    python 1_openai_agents_sdk/smoke_test.py
 
 If it prints a short friendly reply, you're ready for the session.
 """
