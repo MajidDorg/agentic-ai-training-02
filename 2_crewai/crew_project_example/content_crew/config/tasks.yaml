@@ -1,0 +1,14 @@
+research:
+  description: >
+    Identify 3-5 key points and one fresh angle for a post about {topic}.
+  expected_output: >
+    A short bullet list of key points plus one angle.
+  agent: researcher
+
+write_post:
+  description: >
+    Using the research, write a short, engaging post (120-180 words) about {topic}.
+  expected_output: >
+    A finished short post, around 120-180 words.
+  agent: writer
+  output_file: output/post.md

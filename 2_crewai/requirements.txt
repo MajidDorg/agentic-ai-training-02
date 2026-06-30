@@ -1,0 +1,10 @@
+# CrewAI - the framework for this module (Session 2).
+# Pinned to the version this module was built and tested against.
+#
+# IMPORTANT: this module needs its OWN virtual environment on PYTHON 3.11 (see SETUP.md).
+# CrewAI pulls in chromadb, which has no prebuilt wheel for the newest Python on Windows -
+# on 3.11 everything installs cleanly.
+crewai==1.15.1
+
+# Loads the OpenAI API key from the local .env file
+python-dotenv

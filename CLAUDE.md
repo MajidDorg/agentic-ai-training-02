@@ -47,6 +47,11 @@ jumbled order it was built, and never leave stale TODOs describing code that alr
 
 ## The tech stack (and how to keep it working)
 
+> **Framework specifics live in the CURRENT module's `CLAUDE.md` — read it first; it overrides anything
+> here if they differ.** Each module uses a different framework (Module 1 = OpenAI Agents SDK with an
+> async `Runner`; Module 2 = CrewAI with a synchronous `kickoff()`), so don't assume one module's API in
+> another. The universal rules below hold across all modules; the SDK-specific notes describe Module 1.
+
 - **Language:** Python (run as `.py` scripts — **no notebooks** in this course).
 - **Shape of the practical work:** a series of **pre-built** `steps/step_N_*.py` files, one concept each,
   each runnable with an **interactive loop** (type a prompt → see the reply → repeat → `quit`). Students
@@ -84,4 +89,5 @@ instructions and context are pushed to this repo as the course progresses, so **
 `CLAUDE.md` at the start of each session** — it tells you the current project, its goal, and which
 concepts are in scope right now.
 
-**Current module:** `1_openai_agents_sdk/` — see its `CLAUDE.md` and `README.md` for today's project.
+**Current module:** `2_crewai/` — see its `CLAUDE.md` and `README.md` for today's project (CrewAI).
+Module 1 (`1_openai_agents_sdk/`) is complete; its files stay in the repo for reference.
