@@ -52,9 +52,9 @@ async def support_guardrail(ctx, agent, user_input) -> GuardrailFunctionOutput:
     return GuardrailFunctionOutput(output_info=check, tripwire_triggered=blocked)
 
 
-billing_agent = Agent(name="Billing Specialist", handoff_description="Billing, charges, payments.", instructions="Handle billing clearly and reassuringly.", model=MODEL)
-technical_agent = Agent(name="Technical Specialist", handoff_description="Product/technical problems.", instructions="Give simple step-by-step help.", model=MODEL)
-refund_agent = Agent(name="Refund Specialist", handoff_description="Refunds and returns.", instructions="Handle refunds politely and by policy.", model=MODEL)
+billing_agent = Agent(name="Billing Specialist", handoff_description="Billing, charges, payments.", instructions="You are the billing specialist. Reply to the customer's billing/payment issue: acknowledge it and explain the next step. Write a short, helpful reply - never just repeat the customer's message back.", model=MODEL)
+technical_agent = Agent(name="Technical Specialist", handoff_description="Product/technical problems.", instructions="You are the technical-support specialist. Reply with simple step-by-step help. Write a short, helpful reply - never just repeat the customer's message back.", model=MODEL)
+refund_agent = Agent(name="Refund Specialist", handoff_description="Refunds and returns.", instructions="You are the refund specialist. Reply to the refund/return request: acknowledge it and explain how it will be handled, by policy. Write a short, helpful reply - never just repeat the customer's message back.", model=MODEL)
 
 triage_agent = Agent(
     name="Support Triage Agent",

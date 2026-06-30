@@ -22,19 +22,25 @@ MODEL = "gpt-5.4-mini"
 billing_agent = Agent(
     name="Billing Specialist",
     handoff_description="Handles billing, charges, invoices, and payment questions.",
-    instructions="You handle billing questions for a small online store. Be clear and reassuring.",
+    instructions="You are the billing specialist for a small online store. Reply to the customer's "
+    "billing or payment issue: acknowledge it and explain the next step to resolve it. Write a short, "
+    "helpful reply - never just repeat the customer's message back.",
     model=MODEL,
 )
 technical_agent = Agent(
     name="Technical Specialist",
     handoff_description="Handles product and technical problems and how-to questions.",
-    instructions="You handle technical/product issues. Give simple step-by-step help.",
+    instructions="You are the technical-support specialist. Reply to the customer's product/technical "
+    "problem with simple step-by-step help. Write a short, helpful reply - never just repeat the "
+    "customer's message back.",
     model=MODEL,
 )
 refund_agent = Agent(
     name="Refund Specialist",
     handoff_description="Handles refunds and returns.",
-    instructions="You handle refunds and returns politely and by policy.",
+    instructions="You are the refund specialist. Reply to the customer's refund or return request: "
+    "acknowledge it and explain how it will be handled, by policy. Write a short, helpful reply - "
+    "never just repeat the customer's message back.",
     model=MODEL,
 )
 
